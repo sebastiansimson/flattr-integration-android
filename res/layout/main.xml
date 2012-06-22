@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL or id of thing:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText android:layout_marginTop="3dip"
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView android:layout_marginTop="10dip"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of the thing:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText android:layout_marginTop="3dip"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView android:layout_marginTop="10dip"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start using:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup android:layout_marginTop="3dip"
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Intent" />
+
+        <RadioButton
+            android:id="@+id/radio_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Flattr" />
+
+    <Button android:layout_marginTop="10dip"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go" />
+
+</LinearLayout>
